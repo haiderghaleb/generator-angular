@@ -29,12 +29,12 @@ Make a new directory, and `cd` into it:
 mkdir my-new-project && cd $_
 ```
 
-Run `yo angular`, optionally passing an app name:
+Run `yo angular-gulpfix`, optionally passing an app name:
 ```
-yo angular [app-name]
+yo angular-gulpfix [app-name]
 ```
 
-Run `grunt` for building and `grunt serve` for preview
+Run `gulp` for building and `gulp serve` for preview
 
 
 ## Generators
