@@ -12,9 +12,9 @@ of the popular options, have a look at
 
 For step-by-step instructions on using Yeoman and this generator to build a TODO AngularJS application from scratch see [this tutorial.](http://yeoman.io/codelab/)
 
-Install `yo`, `grunt-cli`, `bower`, `generator-angular` and `generator-karma`:
+Install `yo`, `grunt-cli`, `bower`, `generator-angular-gulpfix` and `generator-karma`:
 ```
-npm install -g grunt-cli bower yo generator-karma generator-angular
+npm install -g grunt-cli bower yo generator-karma generator-angular-gulpfix
 ```
 
 If you are planning on using Sass, you will need to first install Ruby and Compass:
@@ -41,25 +41,25 @@ Run `grunt` for building and `grunt serve` for preview
 
 Available generators:
 
-* [angular](#app) (aka [angular:app](#app))
-* [angular:controller](#controller)
-* [angular:directive](#directive)
-* [angular:filter](#filter)
-* [angular:route](#route)
-* [angular:service](#service)
-* [angular:provider](#service)
-* [angular:factory](#service)
-* [angular:value](#service)
-* [angular:constant](#service)
-* [angular:decorator](#decorator)
-* [angular:view](#view)
+* [angular-gulpfix](#app) (aka [angular-gulpfix:app](#app))
+* [angular-gulpfix:controller](#controller)
+* [angular-gulpfix:directive](#directive)
+* [angular-gulpfix:filter](#filter)
+* [angular-gulpfix:route](#route)
+* [angular-gulpfix:service](#service)
+* [angular-gulpfix:provider](#service)
+* [angular-gulpfix:factory](#service)
+* [angular-gulpfix:value](#service)
+* [angular-gulpfix:constant](#service)
+* [angular-gulpfix:decorator](#decorator)
+* [angular-gulpfix:view](#view)
 
 ### App
 Sets up a new AngularJS app, generating all the boilerplate you need to get started. The app generator also optionally installs Bootstrap and additional AngularJS modules, such as angular-resource (installed by default).
 
 Example:
 ```bash
-yo angular
+yo angular-gulpfix
 ```
 
 ### Route
@@ -67,7 +67,7 @@ Generates a controller and view, and configures a route in `app/scripts/app.js` 
 
 Example:
 ```bash
-yo angular:route myroute
+yo angular-gulpfix:route myroute
 ```
 
 Produces `app/scripts/controllers/myroute.js`:
@@ -86,7 +86,7 @@ Produces `app/views/myroute.html`:
 
 Example:
 ```bash
-yo angular:route myRoute --uri=my/route
+yo angular-gulpfix:route myRoute --uri=my/route
 ```
 
 Produces controller and view as above and adds a route to `app/scripts/app.js`
@@ -97,7 +97,7 @@ Generates a controller in `app/scripts/controllers`.
 
 Example:
 ```bash
-yo angular:controller user
+yo angular-gulpfix:controller user
 ```
 
 Produces `app/scripts/controllers/user.js`:
@@ -111,7 +111,7 @@ Generates a directive in `app/scripts/directives`.
 
 Example:
 ```bash
-yo angular:directive myDirective
+yo angular-gulpfix:directive myDirective
 ```
 
 Produces `app/scripts/directives/myDirective.js`:
@@ -132,7 +132,7 @@ Generates a filter in `app/scripts/filters`.
 
 Example:
 ```bash
-yo angular:filter myFilter
+yo angular-gulpfix:filter myFilter
 ```
 
 Produces `app/scripts/filters/myFilter.js`:
@@ -149,7 +149,7 @@ Generates an HTML view file in `app/views`.
 
 Example:
 ```bash
-yo angular:view user
+yo angular-gulpfix:view user
 ```
 
 Produces `app/views/user.html`:
@@ -162,7 +162,7 @@ Generates an AngularJS service.
 
 Example:
 ```bash
-yo angular:service myService
+yo angular-gulpfix:service myService
 ```
 
 Produces `app/scripts/services/myService.js`:
@@ -179,7 +179,7 @@ Generates an AngularJS service decorator.
 
 Example:
 ```bash
-yo angular:decorator serviceName
+yo angular-gulpfix:decorator serviceName
 ```
 
 Produces `app/scripts/decorators/serviceNameDecorator.js`:
@@ -200,7 +200,7 @@ For generators that output scripts, the `--coffee` option will output CoffeeScri
 
 For example:
 ```bash
-yo angular:controller user --coffee
+yo angular-gulpfix:controller user --coffee
 ```
 
 Produces `app/scripts/controller/user.coffee`:
@@ -211,7 +211,7 @@ angular.module('myMod')
 
 For example:
 ```bash
-yo angular:controller user --typescript
+yo angular-gulpfix:controller user --typescript
 ```
 
 Produces `app/scripts/controller/user.ts`:
@@ -261,7 +261,7 @@ By default, new scripts are added to the index.html file. However, this may not 
 
 To skip adding them to the index, pass in the skip-add argument:
 ```bash
-yo angular:service serviceName --skip-add
+yo angular-gulpfix:service serviceName --skip-add
 ```
 
 ## Bower Components
@@ -304,7 +304,7 @@ This will cause Yeoman-generated client-side files to be placed in `public`.
 
 Note that you can also achieve the same results by adding an `--appPath` option when starting generator:
 ```bash
-yo angular [app-name] --appPath=public
+yo angular-gulpfix [app-name] --appPath=public
 ```
 
 ## Testing
